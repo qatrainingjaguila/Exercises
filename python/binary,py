@@ -2,17 +2,25 @@ arr = [1,2,3,4,5,6,7,8,9]
 length = len(arr)
 firstIndex = 0 # first value
 lastIndex = length - 1 # last value
-searchTerm = 0 # search term
+searchTerm = 5 # search term
 
+#while the firstIndex is less than or equal to the last Index
 while firstIndex <= lastIndex:
+
     #midpoint k set as the mean of a and b
     midIndex = (firstIndex+lastIndex)//2
+    #if value at middle index is the search term, end search
     if (arr[midIndex] == searchTerm):
+
         print("Found")
         exit()
+    # else if the value is greater, change the lastIndex to be the midIndex - 1
     elif (arr[midIndex] > searchTerm):
+
         lastIndex = midIndex - 1
+    # Or if the value is less, change the first index to be the midIndex + 1
     else:
+
         firstIndex = midIndex + 1
 
 if firstIndex >= lastIndex:
