@@ -6,13 +6,13 @@ grep -i "string" file # case insensitive
 
 grep "string" demo_* # string in multiple files that match pattern
 
-grep -iw "is" demo_file #searches for exact word no substring
+grep -iw "is" demo_file # searches for exact word no substring
 
-grep -r "romesh" * #recursive in directory
+grep -r "romesh" * # recursive in directory
 
-grep -v -e "a" -e "b" -e "c" test-file.txt #-v does not match patterns after each a
+grep -v -e "a" -e "b" -e "c" test-file.txt # -v does not match patterns after each a
 
-grep -c "go" textfile  #counting matches
+grep -c "go" textfile  # counting matches
 
 grep -c this demo_file
 
