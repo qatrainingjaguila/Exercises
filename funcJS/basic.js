@@ -1,3 +1,5 @@
+// Functions take in input and produce output
+
 // Other ways of calling functions
 
 const compute = (x,y) => x+y
